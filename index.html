@@ -9,31 +9,69 @@
 </head>
 <body>
   <div class="page">
-    <header class="header border">
-      <div class="header_column border">
-        <div class="logo logo_place_header border">
+    <header class="header section-space border">
+      <div class="header__column">
+        <div class="logo logo_place_header">
           <img src="./images/logo_place_header.svg" alt="Логотип ЯП">
-        </div> <!--Закрывается logo-->
-        <div class="title header_title border">   
-          <h1>Научиться читать</h1>
-        </div> <!--Закрывается title-->
-        <div class="subtitle header_subtitle border">   
-          <p>Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a class="link header_link border" href="#">Узнать →</a></p>          
-        </div> <!--Закрывается subtitle-->
+        </div> <!--Закрывается logo-->         
+        <h1 class="header__title">Научиться читать</h1>           
+        <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a class="link header__link" href="#">Узнать →</a></p>
       </div>
-
       <div class="header_column-right">        
-        <div class="main-illustration header_main-illustration border"> 
+        <div class="main-illustration header_main-illustration"> 
           <!-- <img src="./images/header-image.png" alt="Главная картинка"> -->
         </div> <!--Закрывается main-illustration-->
-        <div class="square-pic header__square-pic border">
+        <div class="header__square-pic">
         </div> <!--Закрывается square-pic-->
       </div>
     </header>
-    <section class="description">
+    <section class="description section-space">
       <div class = "two-columns border">
-
+        <h6 class = "two-columns__brief border">Главные проблемы в обучении</h6>
+        <div class="two-columns__main-text border">
+          <p class="two-columns__paragraph border">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не двет нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
+          <p class="two-columns__paragraph border"><span class="two-columns__span-accent border">Вывод:</span>учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+          <p class="two-columns__paragraph border">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+        </div><!--Закрывается two-columns_main-text-->
       </div><!--Закрывается two-columns-->
+    </section>
+    <section class="digits">
+      <h2 class="section-title border">Цифры и факты</h2>
+      <h3 class="section-subtitle border">Про учебу и мозг</h3>
+      <div class="table border">
+        <div class="table__cell border">
+          <h4 class="table__heading border">86 миллиардов</h4>        
+          <p class="table__text">Число нейронов в мозге человека</p>
+        </div>
+        <div class="table__cell border">
+          <h4 class="table__heading border">2,1 миллиарда</h4>
+          <p class="table__text">Число нуждающихся в повышении квалиффикации. Всемирный Банк, 2017</p>
+        </div>
+        <div class="table__cell border">
+          <h4 class="table__heading border">1000 терабайт</h4>
+          <p class="table__text">Объем памяти человека</p>
+        </div>
+        <div class="table__cell border">
+          <h4 class="table__heading border">500 триллионов</h4>
+          <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+        </div>
+        <div class="table__cell border">
+          <h4 class="table__heading border">420 миллионов</h4>
+          <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства. Всемирный Банк, 2017</p>
+        </div>
+        <div class="table__cell border">
+          <h4 class="table__heading border">17—20 лет</h4>
+          <p class="table__text">Пик обучаемости</p>
+        </div>
+        <div class="table__cell border">
+          <h4 class="table__heading border">1885 год</h4>
+          <p class="table__text">Открытие кривой забываемости</p> 
+        </div>
+        <div class="table__cell border">        
+          <h4 class="table__heading border">1889 год</h4>
+          <p class="table__text">Открытие условного рефлекса</p>                     
+        </div>
+      </div><!--Закрывается table border-->
 
     </section>
   </div> <!--Закрывается page-->
