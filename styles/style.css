@@ -51,7 +51,7 @@
   width:730px;
   font-size: 102px;
   line-height: 96px;
-  font-weight: bold;  
+  font-weight: bold;
   z-index:2;
 }
 
@@ -94,7 +94,7 @@
   flex-direction: row;
   justify-content:space-between;
   align-items: flex-start;
-  width: 80%;  
+  width: 80%;
   margin: auto;
 }
 
@@ -144,13 +144,13 @@
 .digits {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   padding-bottom: 100px;  
 }
 
 .digits__section-title{
   font-size: 60px;
-  line-height: 1.15;  
+  line-height: 1.15;
   width: 60%;  
   display:flex;
   justify-content: center;
