@@ -16,39 +16,40 @@
   /* выше установили ограничения для секции */
   position: relative;
   display: flex;
-  flex-direction:row;
-  justify-content: space-between;
+  /* flex-direction:row; */
+  flex-direction:column;
+  justify-content: center;
   padding-left:  64px;
   margin-bottom:100px;
   background-color: #f2f2f2;
 }
 
-.header__column{  
+/* .header__column{  
   display: flex;
   flex-direction:column;
   justify-content: space-between;
-}
+} */
 
-.header_column-left{
+/* .header_column-left{
  position: absolute;
  left:64px;
-}
+} */
 
-.header_column-right{
+/* .header_column-right{
   display: flex;
   flex-direction:column;
   justify-content: end;
-}
+} */
 
 .logo_place_header{
   width:228px;
   height:32px;
-  position: relative;
+  position: absolute;
   top: 30px;
 }
 
 .header__title{
-  width:730px;
+  max-width:730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
@@ -56,11 +57,12 @@
 }
 
 .header__subtitle{
+  margin:0;
   width:388px;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
-  position: relative;
+  position: absolute;
   bottom: 30px;
 }
 
@@ -73,6 +75,9 @@
   width:765px;
   height: 608px;
   z-index: 1;
+  position:absolute;
+  right:0px;
+  bottom:0px;
 }
 
 .header__square-pic {
@@ -148,7 +153,7 @@
   padding-bottom: 100px;
 }
 
-.digits__section-title{
+.section-title{
   font-size: 60px;
   line-height: 1.15;
   width: 60%;
@@ -157,7 +162,7 @@
   margin: auto;
 }
 
-.digits__section-subtitle{
+.section-subtitle{
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
@@ -166,55 +171,61 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom:0;
-}
-
-.digits__table{ 
-  padding-top:60px;
+  /* padding-bottom:60px; */
 }
 
 .table__cell{
   width:250px;
   display:flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  /* align-items:start; */
+  /* justify-content: start; */
+  /* margin-bottom: 60px; */
+  margin-top:60px;
 }
 
 .table__heading{
   font-size: 24px;
   line-height: 1.15;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   margin-top: 0;
+  margin-bottom:0;
 }
 
 .table__text{
   font-size: 18px;
   line-height:1.2;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom:0;
+  font-weight:normal;
 }
 
-.table__cell:nth-child(2)::after{
+/* .table__cell:nth-child(2)::after{
   content: "Всемирный Банк, 2017";
   font-size: 18px;
   line-height:1.2;
   margin-top:20px;
-}
+} */
 
-.table__cell:nth-child(5)::after{
+/* .table__cell:nth-child(5)::after{
   content: "Всемирный Банк, 2017";
   font-size: 18px;
   line-height:1.2;
-  margin-top:20px;
-}
+  margin-top:20px; */
+/* } */
 
 .feynman{
+  background-image: url("../images/feynman.png");
+  background-size: 867px 637px;
   background-color:#f2f2f2;
+  background-repeat:no-repeat;
+  background-position: bottom left;
   margin:auto;
-  height: 890px;
+  min-height: 890px;
   position:relative;
   display:flex;
   flex-direction:column;
-  align-items: center;
+  align-items: center;  
 }
 
 .feynman__title{
@@ -267,7 +278,7 @@
   overflow: hidden;
 }
 
-.kaufman__title_theme_dark{
+.section-title_theme_dark{
   line-height:1.15;
   font-size:60px;
   font-weight:bold;
@@ -279,7 +290,7 @@
   z-index:1;
 }
 
-.kaufman__subtitle_theme_dark{
+.section-subtitle_theme_dark{
   line-height:34px;
   font-size:24px;
   font-weight:normal;
@@ -289,7 +300,7 @@
   color: white;
 }
 
-.table__theme_dark{
+.table_theme_dark{
   list-style-type:none;
   margin-top:0;
   margin-bottom:0;
@@ -305,6 +316,21 @@
 }
 
 .table__heading_theme-dark{
+  /* line-height:1.15;
+  font-size:24px;
+  font-weight:bold;
+  margin:0;
+  margin-bottom:20px; */
+}
+
+.table__text_theme_dark{
+  /* margin:0;
+  line-height:1.2;
+  font-size:18px; */
+  /* font-weight:normal; */
+}
+
+/* .table__heading_theme-dark{
   line-height:1.15;
   font-size:24px;
   font-weight:bold;
@@ -317,7 +343,7 @@
   line-height:1.2;
   font-size:18px;
   font-weight:normal;
-}
+} */
 
 .kaufman__triangle{
   width:877px;
@@ -325,6 +351,10 @@
   position:absolute;
   right:-210px;
   z-index:0;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: contain;  
+  background-repeat:no-repeat;
+  background-position: center;
 }
 
 .footer{
@@ -349,6 +379,11 @@
   flex-direction:column;
   justify-content:space-between;
   flex-basis: 711px;
+}
+
+.logo_place_footer{
+  width:228px;
+  height:32px;
 }
 
 .footer__author{
@@ -401,4 +436,8 @@
   height: 16px;
   background-size: cover;
   margin-right: 10px;
+}
+
+.border{
+  border: 1px red dashed;
 }
