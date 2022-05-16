@@ -1,0 +1,42 @@
+.table__heading_theme_dark{
+    color:white;
+    z-index:1;
+  }
+  
+  .section-title_theme_dark{
+    margin-top:90px;
+    margin-bottom:20px;
+    color: white;
+    z-index:1;
+  }
+  
+  .section-subtitle_theme_dark{  
+    margin:0;
+    color: white;
+    z-index:1;
+  }
+  
+  .table_theme_dark{
+    list-style-type:none;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+    z-index:1;
+    color:white;
+  }
+  
+  .table__cell_theme_dark{
+    width:200px;
+    margin:0;
+    margin-top:80px;
+  }
+  
+  .table__heading_theme-dark{
+    z-index:1;
+    color:white;
+  }
+  
+  .table__text_theme_dark{
+    z-index:1;
+    color:white;
+  }
