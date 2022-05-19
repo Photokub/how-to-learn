@@ -1,4 +1,4 @@
-#Проектная работа II#
+# Проектная работа II #
 
 **Описание**
 Одностраничный сайт. Вёрстка приемущественно на [flex-box](https://doka.guide/css/flexbox-guide/). Файловая структура [БЭМ:nested](https://ru.bem.info/methodology/filestructure/).
