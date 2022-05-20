@@ -12,19 +12,3 @@
     background-color: #f2f2f2;
     overflow:hidden;
   }
-  
-  .logo_place_header{
-    width:228px;
-    height:32px;
-    position: absolute;
-    top: 30px;
-  }
-  
-  .main-illustration{
-    width:765px;
-    height: 608px;
-    z-index: 1;
-    position:absolute;
-    right:0px;
-    bottom:0px;
-  }
